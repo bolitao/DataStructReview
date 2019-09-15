@@ -1,33 +1,233 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="2" />
-    <option name="width" value="1500" />
-    <option name="height" value="823" />
+  <component name="ChangeListManager">
+    <list default="true" id="987cf33b-7b1b-4614-b25c-8874a35f20b2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BST/BST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LinkedList/LinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LinkedList/leetcode/Sum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LinkedList/leetcode/no203/ListNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LinkedList/leetcode/no203/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LinkedList/leetcode/no203/Solution3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/array/Array.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/array/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/array/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/array/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/queue/ArrayQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/queue/LinkedListQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/queue/LoopQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/queue/Queue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/queue/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stack/ArrayStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stack/Leetcode20.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stack/LinkedListStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stack/SpeedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stack/Stack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stack/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindBugs-IDEA-Workspace">
+    <toolWindowEditorPreview>false</toolWindowEditorPreview>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1QBICgDlBuRir9O1JZl4RDwZY8k" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="ignore_missing_gitignore" value="true" />
+    <property name="last_opened_file_path" value="C:/source/Java/J2EELearning" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.19345662" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>12</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.19345662" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Sum">
+    <configuration name="LinkedListQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="queue.LinkedListQueue" />
+      <module name="DataStruct" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="queue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LinkedListStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="stack.LinkedListStack" />
+      <module name="DataStruct" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="stack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpeedTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="stack.SpeedTest" />
+      <module name="DataStruct" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="stack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Sum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LinkedList.leetcode.Sum" />
+      <module name="DataStruct" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LinkedList.leetcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="queue.Test" />
+      <module name="DataStruct" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="queue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Sum" />
+        <item itemvalue="Application.Test (1)" />
+        <item itemvalue="Application.LinkedListQueue" />
+        <item itemvalue="Application.SpeedTest" />
+        <item itemvalue="Application.LinkedListStack" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="987cf33b-7b1b-4614-b25c-8874a35f20b2" name="Default Changelist" comment="" />
+      <created>1563452632554</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1563452632554</updated>
+      <workItem from="1563452633929" duration="8732000" />
+      <workItem from="1563509476514" duration="394000" />
+      <workItem from="1563892345925" duration="693000" />
+      <workItem from="1563893414211" duration="61000" />
+      <workItem from="1567237438163" duration="1276000" />
+      <workItem from="1567583575289" duration="8457000" />
+      <workItem from="1567656495840" duration="199000" />
+      <workItem from="1567656773877" duration="68000" />
+      <workItem from="1567816118045" duration="615000" />
+      <workItem from="1567837876310" duration="13508000" />
+      <workItem from="1567912652575" duration="609000" />
+      <workItem from="1567931384200" duration="9990000" />
+      <workItem from="1568006699532" duration="1150000" />
+      <workItem from="1568010659958" duration="2020000" />
+      <workItem from="1568022830294" duration="1997000" />
+      <workItem from="1568084472085" duration="2088000" />
+      <workItem from="1568106690242" duration="1226000" />
+      <workItem from="1568120089520" duration="3519000" />
+      <workItem from="1568195637925" duration="548000" />
+      <workItem from="1568196259099" duration="580000" />
+      <workItem from="1568196860434" duration="1507000" />
+      <workItem from="1568198810308" duration="38000" />
+      <workItem from="1568198862724" duration="3934000" />
+      <workItem from="1568250931237" duration="27892000" />
+      <workItem from="1568295055672" duration="77000" />
+      <workItem from="1568295724516" duration="36000" />
+      <workItem from="1568338677323" duration="3047000" />
+      <workItem from="1568391600761" duration="56000" />
+      <workItem from="1568437724403" duration="3651000" />
+      <workItem from="1568513107087" duration="39000" />
+      <workItem from="1568517369738" duration="3128000" />
+      <workItem from="1568529106093" duration="8010000" />
+      <workItem from="1568551138979" duration="3928000" />
+    </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1563452677300</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1563452677300</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
 </project>
