@@ -2,30 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="987cf33b-7b1b-4614-b25c-8874a35f20b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BST/BST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LinkedList/LinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LinkedList/leetcode/Sum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LinkedList/leetcode/no203/ListNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LinkedList/leetcode/no203/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LinkedList/leetcode/no203/Solution3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/array/Array.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/array/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/array/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/array/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/queue/ArrayQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/queue/LinkedListQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/queue/LoopQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/queue/Queue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/queue/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stack/ArrayStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stack/Leetcode20.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stack/LinkedListStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stack/SpeedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stack/Stack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stack/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BST/BST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BST/BST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stack/Leetcode20.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stack/Leetcode20.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,13 +39,19 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="C:/source/Java/J2EELearning" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.19345662" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -80,13 +65,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Sum">
-    <configuration name="LinkedListQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="queue.LinkedListQueue" />
+  <component name="RunManager" selected="Application.BST">
+    <configuration name="BST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BST.BST" />
       <module name="DataStruct" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="queue.*" />
+          <option name="PATTERN" value="BST.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -94,8 +79,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedListStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="stack.LinkedListStack" />
+    <configuration name="Leetcode20" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="stack.Leetcode20" />
       <module name="DataStruct" />
       <extension name="coverage">
         <pattern>
@@ -107,12 +92,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpeedTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="stack.SpeedTest" />
+    <configuration name="LinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LinkedList.LinkedList" />
       <module name="DataStruct" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="stack.*" />
+          <option name="PATTERN" value="LinkedList.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -133,12 +118,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="queue.Test" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="stack.Test" />
       <module name="DataStruct" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="queue.*" />
+          <option name="PATTERN" value="stack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -148,11 +133,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BST" />
+        <item itemvalue="Application.Leetcode20" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.LinkedList" />
         <item itemvalue="Application.Sum" />
-        <item itemvalue="Application.Test (1)" />
-        <item itemvalue="Application.LinkedListQueue" />
-        <item itemvalue="Application.SpeedTest" />
-        <item itemvalue="Application.LinkedListStack" />
       </list>
     </recent_temporary>
   </component>
@@ -199,6 +184,13 @@
       <workItem from="1568517369738" duration="3128000" />
       <workItem from="1568529106093" duration="8010000" />
       <workItem from="1568551138979" duration="3928000" />
+      <workItem from="1568810424091" duration="1160000" />
+      <workItem from="1568812157965" duration="2455000" />
+      <workItem from="1568855356700" duration="301000" />
+      <workItem from="1568855674954" duration="124000" />
+      <workItem from="1568855816421" duration="4205000" />
+      <workItem from="1568862069391" duration="3315000" />
+      <workItem from="1568866030605" duration="2461000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1563452677300</created>

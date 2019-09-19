@@ -33,6 +33,6 @@ public class Leetcode20 {
 
     public static void main(String[] args) {
         Leetcode20 test = new Leetcode20();
-        System.out.println(test.isValid("a()"));
+        System.out.println(test.isValid("a(((()"));
     }
 }
