@@ -1,8 +1,6 @@
 package BST;
 
-import java.util.Arrays;
-import java.util.Scanner;
-import java.util.Stack;
+import java.util.*;
 
 /**
  * @author Boli Tao
@@ -205,6 +203,24 @@ public class BST<E extends Comparable<E>> {
         return builder.toString();
     }
 
+    /**
+     * 层序遍历/深度优先遍历
+     */
+    public void levelOrder() {
+        Queue<Node> queue = new LinkedList<>();
+        queue.add(root);
+        while (!queue.isEmpty()) {
+            Node current = queue.remove();
+            System.out.println(current.e);
+            if (current.left != null) {
+                queue.add(current.left);
+            }
+            if (current.right != null) {
+                queue.add(current.right);
+            }
+        }
+    }
+
     public static void main(String[] args) {
         BST<Integer> bst = new BST<Integer>();
         int[] numbers = {11, 5, 3, 2, 6, 1, 3, 5, 6, 7, 22, 45};
@@ -214,11 +230,12 @@ public class BST<E extends Comparable<E>> {
         bst.preOrder();
         System.out.println("非递归前序遍历");
         bst.preOrderNR();
-        System.out.println("\n");
         System.out.println(bst);
         System.out.println("中序遍历: ");
         bst.inOrder();
         System.out.println("后序遍历: ");
         bst.postOrder();
+        System.out.println("层序遍历: ");
+        bst.levelOrder();
     }
 }

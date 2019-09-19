@@ -4,7 +4,6 @@
     <list default="true" id="987cf33b-7b1b-4614-b25c-8874a35f20b2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BST/BST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BST/BST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stack/Leetcode20.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stack/Leetcode20.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -191,6 +190,10 @@
       <workItem from="1568855816421" duration="4205000" />
       <workItem from="1568862069391" duration="3315000" />
       <workItem from="1568866030605" duration="2461000" />
+      <workItem from="1568888512493" duration="2110000" />
+      <workItem from="1568900372962" duration="138000" />
+      <workItem from="1568900528402" duration="2565000" />
+      <workItem from="1568905627029" duration="313000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1563452677300</created>
@@ -199,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1563452677300</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="finish bst">
+      <created>1568888681220</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1568888681220</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,6 +230,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="finish bst" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish bst" />
   </component>
 </project>
