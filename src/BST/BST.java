@@ -3,6 +3,8 @@ package BST;
 import java.util.*;
 
 /**
+ * 二分搜索树，不包含重复元素
+ *
  * @author Boli Tao
  */
 public class BST<E extends Comparable<E>> {
@@ -221,21 +223,124 @@ public class BST<E extends Comparable<E>> {
         }
     }
 
-    public static void main(String[] args) {
-        BST<Integer> bst = new BST<Integer>();
-        int[] numbers = {11, 5, 3, 2, 6, 1, 3, 5, 6, 7, 22, 45};
-        for (int i : numbers) {
-            bst.add(i);
+    public E getMin() {
+        if (size == 0) {
+            throw new IllegalArgumentException("BST is empty.");
         }
-        bst.preOrder();
-        System.out.println("非递归前序遍历");
-        bst.preOrderNR();
-        System.out.println(bst);
-        System.out.println("中序遍历: ");
-        bst.inOrder();
-        System.out.println("后序遍历: ");
-        bst.postOrder();
-        System.out.println("层序遍历: ");
-        bst.levelOrder();
+        return minimum(root).e;
+    }
+
+    private Node minimum(Node node) {
+        if (node.left == null) {
+            return node;
+        }
+        return minimum(node.left);
+    }
+
+    public E getMax() {
+        if (size == 0) {
+            throw new IllegalArgumentException("BST is empty.");
+        }
+        return maximum(root).e;
+    }
+
+    private Node maximum(Node node) {
+        if (node.right == null) {
+            return node;
+        }
+        return maximum(node.right);
+    }
+
+    public E removeMin() {
+        E ret = getMin();
+        root = removeMin(root);
+        return ret;
+    }
+
+    /**
+     * 删除以 node 为根的最小节点
+     *
+     * @param node 根节点
+     * @return 删除元素后新的二分搜索树的根
+     */
+    private Node removeMin(Node node) {
+        if (node.left == null) {
+            Node rightNode = node.right;
+            node.right = null;
+            size--;
+            return rightNode;
+        }
+        node.left = removeMin(node.left);
+        return node;
+    }
+
+    public E removeMax() {
+        E ret = getMax();
+        root = removeMax(root);
+        return ret;
+    }
+
+    private Node removeMax(Node node) {
+        if (node.right == null) {
+            Node leftNode = node.left;
+            node.left = null;
+            size--;
+            return leftNode;
+        }
+        node.right = removeMax(node.right);
+        return node;
+    }
+
+    public void remove(E e) {
+        root = remove(root, e);
+    }
+
+    /**
+     * 删除以 node 为根的值为 e 的节点
+     *
+     * @param node 根节点
+     * @param e    待删除节点的值
+     * @return 删除之后的根节点
+     */
+    private Node remove(Node node, E e) {
+        if (node == null) {
+            return null;
+        }
+        if (e.compareTo(node.e) < 0) {
+            node.left = remove(node.left, e);
+            return node;
+        }
+        if (e.compareTo(node.e) > 0) {
+            node.right = remove(node.right, e);
+            return node;
+        } else { // e equals node.e
+            // 待删除结点左子树为空的情况
+            if (node.left == null) {
+                Node rightNode = node.right;
+                node.right = null;
+                size--;
+                return rightNode;
+            }
+            // 待删除结点右子树为空的情况
+            if (node.right == null) {
+                Node leftNode = node.left;
+                node.left = null;
+                size--;
+                return leftNode;
+            }
+            /*
+            待删除节点左右节点都不为空的情况：
+            找到比待删除结点大的最小节点 a（即右子树的最小节点），用这个节点 a 顶替待删除结点
+            注意 size 的变化情况
+            另外：找待删除结点左子树的最大值作为顶替节点 a 也是可以的
+            */
+            Node successor = minimum(node.right);
+            successor.right = removeMin(node.right);
+            size++;
+            successor.left = node.left;
+            node.left = node.right = null;
+            size--;
+            return successor;
+        }
     }
 }
