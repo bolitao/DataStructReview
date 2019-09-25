@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="987cf33b-7b1b-4614-b25c-8874a35f20b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/map/BinarySearchTreeMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/map/LinkedListMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/map/Map.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LinkedList/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/BinarySearchTreeMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/BinarySearchTreeMap.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -214,7 +211,7 @@
       <workItem from="1569332785946" duration="2428000" />
       <workItem from="1569375082809" duration="5364000" />
       <workItem from="1569409707780" duration="2148000" />
-      <workItem from="1569411907914" duration="3141000" />
+      <workItem from="1569411907914" duration="4610000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1563452677300</created>
@@ -237,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568905983629</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="完成由链表实现的映射&#10;由二分搜索树实现的映射...65%">
+      <created>1569415059696</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1569415059696</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
