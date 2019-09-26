@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="987cf33b-7b1b-4614-b25c-8874a35f20b2" name="Default Changelist" comment="二分搜索树的广度优先遍历">
-      <change afterPath="$PROJECT_DIR$/src/BST/Test.java" afterDir="false" />
+    <list default="true" id="987cf33b-7b1b-4614-b25c-8874a35f20b2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-tale-of-two-cities.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pride-and-prejudice.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/set/BinarySearchTreeSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/set/LinkedListSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/set/Set.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tool/FileOperation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BST/BST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BST/BST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BST/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BST/Test.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,9 +30,6 @@
       </list>
     </option>
   </component>
-  <component name="FindBugs-IDEA-Workspace">
-    <toolWindowEditorPreview>false</toolWindowEditorPreview>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -39,7 +42,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../how2j/hibernate" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/set" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -52,6 +55,16 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.19345662" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\source\Java\DataStruct" />
+      <recent name="D:\source\Java\DataStruct\src\tool" />
+      <recent name="D:\source\Java\DataStruct\src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\source\Java\DataStruct\src\set" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -79,12 +92,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Leetcode20" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="stack.Leetcode20" />
+    <configuration name="BinarySearchTreeSet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="set.BinarySearchTreeSet" />
       <module name="DataStruct" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="stack.*" />
+          <option name="PATTERN" value="set.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -92,12 +105,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LinkedList.LinkedList" />
+    <configuration name="Leetcode20" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="stack.Leetcode20" />
       <module name="DataStruct" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="LinkedList.*" />
+          <option name="PATTERN" value="stack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,10 +147,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Test (1)" />
+        <item itemvalue="Application.BinarySearchTreeSet" />
         <item itemvalue="Application.BST" />
         <item itemvalue="Application.Leetcode20" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.LinkedList" />
       </list>
     </recent_temporary>
   </component>
@@ -210,7 +223,7 @@
       <workItem from="1569137620928" duration="2386000" />
       <workItem from="1569227566825" duration="760000" />
       <workItem from="1569332785946" duration="2428000" />
-      <workItem from="1569375082809" duration="5364000" />
+      <workItem from="1569375082809" duration="14646000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1563452677300</created>
@@ -233,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568905983629</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="实现二分搜索树元素的删除">
+      <created>1569387424755</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1569387424755</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,6 +276,7 @@
     <MESSAGE value="init" />
     <MESSAGE value="finish bst" />
     <MESSAGE value="二分搜索树的广度优先遍历" />
-    <option name="LAST_COMMIT_MESSAGE" value="二分搜索树的广度优先遍历" />
+    <MESSAGE value="实现二分搜索树元素的删除" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现二分搜索树元素的删除" />
   </component>
 </project>

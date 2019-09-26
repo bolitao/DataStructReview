@@ -28,6 +28,7 @@ public class Test {
         while (!bst.isEmpty()) {
             integers.add(bst.removeMin());
         }
+        System.out.println("Size: " + integers.size());
         System.out.println(integers);
         for (int i = 1; i < integers.size(); i++) {
             if (integers.get(i - 1) > integers.get(i)) {
