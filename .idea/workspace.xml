@@ -223,7 +223,9 @@
       <workItem from="1569137620928" duration="2386000" />
       <workItem from="1569227566825" duration="760000" />
       <workItem from="1569332785946" duration="2428000" />
-      <workItem from="1569375082809" duration="14646000" />
+      <workItem from="1569375082809" duration="5364000" />
+      <workItem from="1569409707780" duration="2148000" />
+      <workItem from="1569411907914" duration="4610000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1563452677300</created>
@@ -246,12 +248,12 @@
       <option name="project" value="LOCAL" />
       <updated>1568905983629</updated>
     </task>
-    <task id="LOCAL-00004" summary="实现二分搜索树元素的删除">
-      <created>1569387424755</created>
+    <task id="LOCAL-00004" summary="完成由链表实现的映射&#10;由二分搜索树实现的映射...65%">
+      <created>1569415059696</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1569387424755</updated>
+      <updated>1569415059696</updated>
     </task>
     <option name="localTasksCounter" value="5" />
     <servers />
@@ -276,7 +278,7 @@
     <MESSAGE value="init" />
     <MESSAGE value="finish bst" />
     <MESSAGE value="二分搜索树的广度优先遍历" />
-    <MESSAGE value="实现二分搜索树元素的删除" />
-    <option name="LAST_COMMIT_MESSAGE" value="实现二分搜索树元素的删除" />
+    <MESSAGE value="完成由链表实现的映射&#10;由二分搜索树实现的映射...65%" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成由链表实现的映射&#10;由二分搜索树实现的映射...65%" />
   </component>
 </project>
