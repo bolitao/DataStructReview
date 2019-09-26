@@ -149,4 +149,19 @@ public class Array<E> {
     public E getFirst() {
         return get(0);
     }
+
+    /**
+     * 交换索引为 i j 的元素
+     *
+     * @param i index i
+     * @param j index j
+     */
+    public void swap(int i, int j) {
+        if (i < 0 || i >= size || j < 0 || j >= size) {
+            throw new IllegalArgumentException("Index is illegal");
+        }
+        E temp = data[i];
+        data[i] = data[j];
+        data[j] = temp;
+    }
 }
