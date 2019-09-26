@@ -18,6 +18,18 @@ public class MaxHeap<E extends Comparable<E>> {
         data = new Array<>();
     }
 
+    /**
+     * 构造函数：将传入数组组成为最大堆
+     *
+     * @param arr 待化为最大堆的数组
+     */
+    public MaxHeap(E[] arr) {
+        data = new Array<>(arr);
+        for (int i = parent(arr.length - 1); i >= 0; i--) {
+            siftDown(i);
+        }
+    }
+
     public int size() {
         return data.getSize();
     }
@@ -108,6 +120,18 @@ public class MaxHeap<E extends Comparable<E>> {
         }
     }
 
+    public E replace(E e) {
+        E ret = getMax();
+        data.set(0, e);
+        siftDown(0);
+        return ret;
+    }
+
+    /**
+     * 测试类
+     *
+     * @param args args
+     */
     public static void main(String[] args) {
         int n = 1000000;
         MaxHeap<Integer> maxHeap = new MaxHeap<>();
