@@ -45,7 +45,7 @@ public class MaxHeapTest {
         double time2 = testHeap(testData, true);
         System.out.println("一个个添入堆中耗时：" + time1 + "\n使用 heapify() 添入堆中耗时：" + time2);
         /*
-        JDK 11 (Windows 64) 运行结果：
+        JDK 11 (Windows 64)：
         Completed!
         Completed!
         一个个添入堆中耗时：0.9817706

@@ -2,16 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="987cf33b-7b1b-4614-b25c-8874a35f20b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/heap/MaxHeapTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/queue/PriorityQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/queue/leetcode347/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/array/Array.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/Array.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/heap/MaxHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/heap/MaxHeap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/heap/MaxHeapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/heap/MaxHeapTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="testRunner" value="GRADLE" />
@@ -50,7 +64,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.19345662" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
+    <property name="settings.editor.selected.configurable" value="leetcode.id" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -226,7 +240,11 @@
       <workItem from="1569466697486" duration="5488000" />
       <workItem from="1569482243203" duration="9560000" />
       <workItem from="1569503592006" duration="107000" />
-      <workItem from="1569511160821" duration="2964000" />
+      <workItem from="1569511160821" duration="3180000" />
+      <workItem from="1569551900357" duration="3860000" />
+      <workItem from="1569573156328" duration="2477000" />
+      <workItem from="1569577570382" duration="632000" />
+      <workItem from="1569578216805" duration="3196000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1563452677300</created>
@@ -263,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569512337290</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="将一个无序数组存入最大堆">
+      <created>1569514293618</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1569514293618</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,6 +314,7 @@
     <MESSAGE value="完成由链表实现的映射&#10;由二分搜索树实现的映射...65%" />
     <MESSAGE value="堆" />
     <MESSAGE value="堆&#10;TODO: 堆排序相关的笔试题" />
-    <option name="LAST_COMMIT_MESSAGE" value="堆&#10;TODO: 堆排序相关的笔试题" />
+    <MESSAGE value="将一个无序数组存入最大堆" />
+    <option name="LAST_COMMIT_MESSAGE" value="将一个无序数组存入最大堆" />
   </component>
 </project>
