@@ -35,7 +35,7 @@ public class MaxHeapTest {
     }
 
     public static void main(String[] args) {
-        int n = 1000000;
+        int n = 10000000;
         Random random = new Random();
         Integer[] testData = new Integer[n];
         for (int i = 0; i < n; i++) {
@@ -45,11 +45,17 @@ public class MaxHeapTest {
         double time2 = testHeap(testData, true);
         System.out.println("一个个添入堆中耗时：" + time1 + "\n使用 heapify() 添入堆中耗时：" + time2);
         /*
-        JDK 11 (Windows 64)：
-        Completed!
-        Completed!
-        一个个添入堆中耗时：0.9817706
-        使用 heapify() 添入堆中耗时：0.7843288
+        JDK 11 (Windows 64):
+        一个个添入堆中耗时：16.7654832
+        使用 heapify() 添入堆中耗时：14.7426247
+
+        JDK 8 win64:
+        一个个添入堆中耗时：13.8566109
+        使用 heapify() 添入堆中耗时：9.150135
+
+        JDK 8 macOS:
+        一个个添入堆中耗时：13.663855983
+        使用 heapify() 添入堆中耗时：9.29696969
          */
     }
 }
