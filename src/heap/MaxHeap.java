@@ -82,7 +82,7 @@ public class MaxHeap<E extends Comparable<E>> {
     /**
      * 取出堆中最大元素
      *
-     * @return
+     * @return max value
      */
     public E extractMax() {
         E ret = getMax();
@@ -101,7 +101,6 @@ public class MaxHeap<E extends Comparable<E>> {
 
     /**
      * 为满足最大堆性质而设计的元素下沉方法
-     * TODO: 需要进一步理解
      *
      * @param k 需要被下沉的元素索引
      */

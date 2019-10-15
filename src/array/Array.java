@@ -1,7 +1,5 @@
 package array;
 
-import java.util.WeakHashMap;
-
 /**
  * 自定义的 Array 类
  *
@@ -70,9 +68,6 @@ public class Array<E> {
     }
 
     public void add(int index, E value) {
-//        if (size >= data.length) {
-//            throw new IllegalArgumentException("add() method failed, array is full.");
-//        }
         if (index < 0 || index > size) {
             throw new IllegalArgumentException("add() failed. Requirement: 0 <=index <= size.");
         }
@@ -114,7 +109,6 @@ public class Array<E> {
         // loitering objects != memory leak
         data[size] = null;
         if (size == data.length / 4 && data.length / 2 != 0) {
-            // TODO: / 4?
             resize(data.length / 2);
         }
         return removedValue;

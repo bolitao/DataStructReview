@@ -67,7 +67,7 @@ public class BST<E extends Comparable<E>> {
     /**
      * 向二叉树中插入节点，忽略重复元素
      *
-     * @param root 根节点
+     * @param root 根节点（也包含子树的根节点）
      * @param e    需要插入的元素
      * @return 插入新节点后二叉树的根
      */
@@ -206,7 +206,7 @@ public class BST<E extends Comparable<E>> {
     }
 
     /**
-     * 层序遍历/深度优先遍历
+     * 层序遍历/ 广度优先遍历
      */
     public void levelOrder() {
         Queue<Node> queue = new LinkedList<>();

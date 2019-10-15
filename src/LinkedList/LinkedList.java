@@ -43,7 +43,6 @@ public class LinkedList<E> {
         return size == 0;
     }
 
-
     public void add(int index, E e) {
         if (index < 0 || index > size) {
             throw new IllegalArgumentException("add() filed, illegal index.");
@@ -117,8 +116,8 @@ public class LinkedList<E> {
         E deletedData = deletedNode.e;
         prev.next = deletedNode.next;
         size--;
-        deletedNode = null;
-//        deletedNode.next = null;
+        // deletedNode = null;
+        deletedNode.next = null;
         return deletedData;
     }
 

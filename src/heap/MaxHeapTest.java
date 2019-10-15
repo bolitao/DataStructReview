@@ -35,7 +35,7 @@ public class MaxHeapTest {
     }
 
     public static void main(String[] args) {
-        int n = 10000000;
+        int n = 1000000;
         Random random = new Random();
         Integer[] testData = new Integer[n];
         for (int i = 0; i < n; i++) {

@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="987cf33b-7b1b-4614-b25c-8874a35f20b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/hash/HashTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hash/hashCodeTest/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hash/hashCodeTest/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hash/leetcode387/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rbtree/RBTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BST/BST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BST/BST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/array/Array.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/Array.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/heap/MaxHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/heap/MaxHeap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/heap/MaxHeapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/heap/MaxHeapTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/queue/LoopQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/queue/LoopQueue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/set/BinarySearchTreeSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/set/BinarySearchTreeSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/set/LinkedListSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/set/LinkedListSet.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,9 +45,6 @@
       </list>
     </option>
   </component>
-  <component name="FindBugs-IDEA-Workspace">
-    <toolWindowEditorPreview>false</toolWindowEditorPreview>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -71,7 +70,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.19345662" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -95,13 +94,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MaxHeapTest">
-    <configuration name="BinarySearchTreeSet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="set.BinarySearchTreeSet" />
+  <component name="RunManager" selected="Application.LinkedListQueue">
+    <configuration name="LinkedListQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="queue.LinkedListQueue" />
       <module name="DataStruct" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="set.*" />
+          <option name="PATTERN" value="queue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LinkedListStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="stack.LinkedListStack" />
+      <module name="DataStruct" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="stack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,38 +134,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaxHeapTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="heap.MaxHeapTest" />
-      <module name="DataStruct" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="heap.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BST.Test" />
+      <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="DataStruct" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="BST.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hash.hashCodeTest.Test" />
+    <configuration name="Test (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="array.Test" />
       <module name="DataStruct" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hash.hashCodeTest.*" />
+          <option name="PATTERN" value="array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -163,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MaxHeapTest" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.MaxHeap" />
+        <item itemvalue="Application.LinkedListQueue" />
         <item itemvalue="Application.Test (1)" />
-        <item itemvalue="Application.BinarySearchTreeSet" />
+        <item itemvalue="Application.LinkedListStack" />
+        <item itemvalue="Application.Test (2)" />
+        <item itemvalue="Application.MaxHeap" />
       </list>
     </recent_temporary>
   </component>
@@ -271,7 +264,21 @@
       <workItem from="1570164500176" duration="3391000" />
       <workItem from="1570238474618" duration="10529000" />
       <workItem from="1570328351110" duration="1491000" />
-      <workItem from="1570331599093" duration="1375000" />
+      <workItem from="1570331599093" duration="3574000" />
+      <workItem from="1570342093298" duration="2683000" />
+      <workItem from="1570358855364" duration="3474000" />
+      <workItem from="1570365406598" duration="2142000" />
+      <workItem from="1570425056956" duration="625000" />
+      <workItem from="1570425916351" duration="274000" />
+      <workItem from="1570508332408" duration="876000" />
+      <workItem from="1570697063692" duration="16683000" />
+      <workItem from="1570721978014" duration="499000" />
+      <workItem from="1570756778542" duration="16687000" />
+      <workItem from="1570794047751" duration="1039000" />
+      <workItem from="1570808204699" duration="236000" />
+      <workItem from="1570937448196" duration="5000" />
+      <workItem from="1571104137202" duration="387000" />
+      <workItem from="1571106640131" duration="4921000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1563452677300</created>
@@ -322,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569583014681</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="哈希">
+      <created>1570338001197</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1570338001197</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,6 +364,7 @@
     <MESSAGE value="堆&#10;TODO: 堆排序相关的笔试题" />
     <MESSAGE value="将一个无序数组存入最大堆" />
     <MESSAGE value="完成优先队列" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成优先队列" />
+    <MESSAGE value="哈希" />
+    <option name="LAST_COMMIT_MESSAGE" value="哈希" />
   </component>
 </project>

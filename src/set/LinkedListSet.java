@@ -24,7 +24,7 @@ public class LinkedListSet<E> implements Set<E> {
 
     @Override
     public void remove(E e) {
-        // TODO
+        linkedList.removeElement(e);
     }
 
     @Override

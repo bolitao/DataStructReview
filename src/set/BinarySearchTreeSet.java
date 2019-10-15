@@ -3,7 +3,6 @@ package set;
 import BST.BST;
 import tool.FileOperation;
 
-import java.io.File;
 import java.util.ArrayList;
 
 /**
@@ -56,7 +55,7 @@ public class BinarySearchTreeSet<E extends Comparable<E>> implements Set<E> {
             System.out.println("忽略重复单词：" + set1.getSize());
         }
         System.out.println();
-        // 以 A Tale of Two Cities txt 做测试
+        // 以 A Tale of Two Cities 的 txt 文件做测试
         System.out.println("A Tale of Two Cities: ");
         ArrayList<String> words2 = new ArrayList<>();
         if (FileOperation.readFile("a-tale-of-two-cities.txt", words2)) {
