@@ -3,6 +3,9 @@ package BST;
 import java.util.ArrayList;
 import java.util.Random;
 
+/**
+ * @author 陶波利
+ */
 public class Test {
     public static void main(String[] args) {
         BST<Integer> bst = new BST<Integer>();
@@ -28,6 +31,7 @@ public class Test {
         while (!bst.isEmpty()) {
             integers.add(bst.removeMin());
         }
+        System.out.println("Size: " + integers.size());
         System.out.println(integers);
         for (int i = 1; i < integers.size(); i++) {
             if (integers.get(i - 1) > integers.get(i)) {

@@ -1,7 +1,5 @@
 package array;
 
-import java.util.WeakHashMap;
-
 /**
  * 自定义的 Array 类
  *
@@ -18,6 +16,14 @@ public class Array<E> {
     public Array(int capacity) {
         data = (E[]) new Object[capacity];
         size = 0;
+    }
+
+    public Array(E[] arr) {
+        data = (E[]) new Object[arr.length];
+        for (int i = 0; i < arr.length; i++) {
+            data[i] = arr[i];
+        }
+        size = arr.length;
     }
 
     public int getSize() {
@@ -62,9 +68,6 @@ public class Array<E> {
     }
 
     public void add(int index, E value) {
-//        if (size >= data.length) {
-//            throw new IllegalArgumentException("add() method failed, array is full.");
-//        }
         if (index < 0 || index > size) {
             throw new IllegalArgumentException("add() failed. Requirement: 0 <=index <= size.");
         }
@@ -106,7 +109,6 @@ public class Array<E> {
         // loitering objects != memory leak
         data[size] = null;
         if (size == data.length / 4 && data.length / 2 != 0) {
-            // TODO: / 4?
             resize(data.length / 2);
         }
         return removedValue;
@@ -148,5 +150,20 @@ public class Array<E> {
 
     public E getFirst() {
         return get(0);
+    }
+
+    /**
+     * 交换索引为 i j 的元素
+     *
+     * @param i index i
+     * @param j index j
+     */
+    public void swap(int i, int j) {
+        if (i < 0 || i >= size || j < 0 || j >= size) {
+            throw new IllegalArgumentException("Index is illegal");
+        }
+        E temp = data[i];
+        data[i] = data[j];
+        data[j] = temp;
     }
 }

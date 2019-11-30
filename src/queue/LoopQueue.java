@@ -27,7 +27,6 @@ public class LoopQueue<E> implements Queue<E> {
     }
 
     private void resize(int newCapacity) {
-//        System.out.println("resize()");
         E[] temp = (E[]) new Object[newCapacity];
         // 第一种遍历的方式
         for (int i = 0; i < size; i++) {
