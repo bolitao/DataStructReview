@@ -10,11 +10,13 @@ public class Graph {
      */
     private int[][] edges;
     private int numOfEdges;
+    private boolean[] isVisited;
 
     public Graph(int vertexCount) {
         edges = new int[vertexCount][vertexCount];
         vertexList = new ArrayList<>(vertexCount);
         numOfEdges = 0;
+        isVisited = new boolean[5]; // TODO
     }
 
     public void insertVertex(String vertex) {
@@ -59,6 +61,57 @@ public class Graph {
         }
     }
 
+    /**
+     * 返回一个邻结点的下标
+     *
+     * @param index index
+     * @return index of the neighbor vertex, return -1 if not exists
+     */
+    public int getFirstNeighbor(int index) {
+        for (int i = 0; i < vertexList.size(); i++) {
+            if (edges[index][i] > 0) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    /**
+     * 根据前一个邻接结点的下标来获取下一个邻接结点
+     *
+     * @param v1 v1
+     * @param v2 v2
+     * @return index
+     */
+    public int getNextNeighbor(int v1, int v2) {
+        for (int i = v2 + 1; i < vertexList.size(); i++) {
+            if (edges[v1][i] > 0) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    private void dfs(boolean[] isVisited, int i) {
+        System.out.print(getValueByIndex(i) + " ");
+        isVisited[i] = true;
+        int w = getFirstNeighbor(i);
+        while (w != -1) {
+            if (!isVisited[w]) {
+                dfs(isVisited, w);
+            }
+            w = getNextNeighbor(i, w);
+        }
+    }
+
+    public void dfs() {
+        for (int i = 0; i < getNumOfVertex(); i++) {
+            if (!isVisited[i]) {
+                dfs(isVisited, i);
+            }
+        }
+    }
+
     public static void main(String[] args) {
         int vertexCount = 5;
         String[] vertexValues = {"A", "B", "C", "D", "E"};
@@ -72,5 +125,7 @@ public class Graph {
         graph.insertEdge(1, 3, 1);
         graph.insertEdge(1, 4, 1);
         graph.showGraph();
+        System.out.println("\nDFS: ");
+        graph.dfs();
     }
 }
