@@ -35,7 +35,7 @@ public class FileOperation {
         }
         // 简单分词
         // 这个分词方式相对简陋, 没有考虑很多文本处理中的特殊问题
-        // 在这里只做demo展示用
+        // 在这里只做 demo 展示用
         if (scanner.hasNextLine()) {
             String contents = scanner.useDelimiter("\\A").next();
             int start = firstCharacterIndex(contents, 0);
