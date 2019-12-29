@@ -12,7 +12,7 @@ public class Graph {
     /**
      * 权如果为这个值表示不连通
      */
-    private static final int MAX_INTEGER = Integer.MAX_VALUE;
+    private static final int INF = Integer.MAX_VALUE;
     /**
      * 结点
      */
@@ -62,6 +62,10 @@ public class Graph {
 //                this.edges[i][j] = weight[i][j];
 //            }
         }
+    }
+
+    public String getEdge(int vertex1, int vertex2) {
+        return "<" + vertexList.get(vertex1) + ", " + vertexList.get(vertex2) + ">";
     }
 
     public int getNumOfVertex() {
@@ -180,7 +184,7 @@ public class Graph {
         isVisited[startIndex] = 1;
         // h1 与 h2 为两个顶点的下标
         int h1 = -1, h2 = -1;
-        int minWeight = MAX_INTEGER; // 初始化为 MAX
+        int minWeight = INF; // 初始化为 MAX
         // 有 (getNumOfVertex() - 1) 条边
         for (int k = 1; k < getNumOfVertex(); k++) {
             for (int i = 0; i < getNumOfVertex(); i++) {
@@ -192,10 +196,10 @@ public class Graph {
                     }
                 }
             }
-            System.out.printf("Edge: (%d, %d), weight: %d.\n", h1, h2, minWeight);
+            System.out.printf("Edge: %s, weight: %d.\n", getEdge(h1, h2), minWeight);
             isVisited[h2] = 1;
             sumWeight += minWeight;
-            minWeight = MAX_INTEGER;
+            minWeight = INF;
         }
         return sumWeight;
     }
@@ -237,13 +241,13 @@ public class Graph {
         String[] data = new String[]{"A", "B", "C", "D", "E", "F", "G"};
         int vertexCount = data.length;
         int[][] weight = new int[][]{
-                {MAX_INTEGER, 5, 7, MAX_INTEGER, MAX_INTEGER, MAX_INTEGER, 2},
-                {5, MAX_INTEGER, MAX_INTEGER, 9, MAX_INTEGER, MAX_INTEGER, 3},
-                {7, MAX_INTEGER, MAX_INTEGER, MAX_INTEGER, 8, MAX_INTEGER, MAX_INTEGER},
-                {MAX_INTEGER, 9, MAX_INTEGER, MAX_INTEGER, MAX_INTEGER, 4, MAX_INTEGER},
-                {MAX_INTEGER, MAX_INTEGER, 8, MAX_INTEGER, MAX_INTEGER, 5, 4},
-                {MAX_INTEGER, MAX_INTEGER, MAX_INTEGER, 4, 5, MAX_INTEGER, 6},
-                {2, 3, MAX_INTEGER, MAX_INTEGER, 4, 6, MAX_INTEGER}
+                {INF, 5, 7, INF, INF, INF, 2},
+                {5, INF, INF, 9, INF, INF, 3},
+                {7, INF, INF, INF, 8, INF, INF},
+                {INF, 9, INF, INF, INF, 4, INF},
+                {INF, INF, 8, INF, INF, 5, 4},
+                {INF, INF, INF, 4, 5, INF, 6},
+                {2, 3, INF, INF, 4, 6, INF}
         };
         Graph graph = new Graph(vertexCount);
         graph.createGraph(vertexCount, data, weight);
