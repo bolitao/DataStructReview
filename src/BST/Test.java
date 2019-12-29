@@ -8,23 +8,24 @@ import java.util.Random;
  */
 public class Test {
     public static void main(String[] args) {
+        BST<Integer> integerBST = new BST<Integer>();
+        int[] numbers = {11, 5, 3, 2, 6, 1, 3, 5, 6, 7, 22, 45};
+        for (int i : numbers) {
+            integerBST.add(i);
+        }
+        integerBST.preOrder();
+        System.out.println("非递归前序遍历");
+        integerBST.preOrderNR();
+        System.out.println(integerBST);
+        System.out.println("中序遍历: ");
+        integerBST.inOrder();
+        System.out.println("后序遍历: ");
+        integerBST.postOrder();
+        System.out.println("层序遍历: ");
+        System.out.println(integerBST.levelOrder());
         BST<Integer> bst = new BST<Integer>();
-//        int[] numbers = {11, 5, 3, 2, 6, 1, 3, 5, 6, 7, 22, 45};
-//        for (int i : numbers) {
-//            bst.add(i);
-//        }
-//        bst.preOrder();
-//        System.out.println("非递归前序遍历");
-//        bst.preOrderNR();
-//        System.out.println(bst);
-//        System.out.println("中序遍历: ");
-//        bst.inOrder();
-//        System.out.println("后序遍历: ");
-//        bst.postOrder();
-//        System.out.println("层序遍历: ");
-//        bst.levelOrder();
         Random random = new Random();
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < 10000; i++) {
             bst.add(random.nextInt(10000));
         }
         ArrayList<Integer> integers = new ArrayList<>();
@@ -39,5 +40,13 @@ public class Test {
             }
         }
         System.out.println("Test completed.");
+        BST<Integer> bst2 = new BST<Integer>();
+        for (int i = 0; i < 20; i++) {
+            bst2.add(random.nextInt(100));
+        }
+        System.out.println("递归层序遍历: ");
+        System.out.println(bst2.levelOrder());
+        System.out.println("非递归层序遍历: ");
+        System.out.println(bst2.levelOrder2());
     }
 }

@@ -8,6 +8,9 @@ import java.util.*;
  * @author Boli Tao
  */
 public class BST<E extends Comparable<E>> {
+    private Node root;
+    private int size;
+
     private class Node {
         E e;
         Node left, right;
@@ -44,9 +47,6 @@ public class BST<E extends Comparable<E>> {
         }
     }
 
-    private Node root;
-    private int size;
-
     public BST() {
         root = null;
         size = 0;
@@ -67,7 +67,7 @@ public class BST<E extends Comparable<E>> {
     /**
      * 向二叉树中插入节点，忽略重复元素
      *
-     * @param root 根节点（也包含子树的根节点）
+     * @param root 根节点
      * @param e    需要插入的元素
      * @return 插入新节点后二叉树的根
      */
@@ -91,9 +91,9 @@ public class BST<E extends Comparable<E>> {
     /**
      * 判断以 root 为根的树是否含有值 e
      *
-     * @param root 树的根
+     * @param root 根
      * @param e    需要查询的值
-     * @return 是否找到
+     * @return boolean 是否找到
      */
     private boolean contains(Node root, E e) {
         if (root == null) {
@@ -206,14 +206,17 @@ public class BST<E extends Comparable<E>> {
     }
 
     /**
-     * 层序遍历/ 广度优先遍历
+     * 层序遍历、广度优先遍历 递归写法
+     *
+     * @return result
      */
-    public void levelOrder() {
+    public List<E> levelOrder() {
+        List<E> resultList = new ArrayList<>();
         Queue<Node> queue = new LinkedList<>();
         queue.add(root);
         while (!queue.isEmpty()) {
             Node current = queue.remove();
-            System.out.println(current.e);
+            resultList.add(current.e);
             if (current.left != null) {
                 queue.add(current.left);
             }
@@ -221,6 +224,36 @@ public class BST<E extends Comparable<E>> {
                 queue.add(current.right);
             }
         }
+        return resultList;
+    }
+
+    /**
+     * 非递归广度优先遍历
+     *
+     * @return result
+     */
+    public List<List<E>> levelOrder2() {
+        List<List<E>> resultList = new ArrayList<>();
+        int levelNum = 0; // 记录某层具有多少个节点
+        Queue<Node> treeQueue = new LinkedList<>();
+        treeQueue.add(root);
+        while (!treeQueue.isEmpty()) {
+            levelNum = treeQueue.size();
+            List<E> levelList = new ArrayList<>();
+            while (levelNum > 0) {
+                Node tempNode = treeQueue.poll();
+                if (tempNode != null) {
+                    levelList.add(tempNode.e);
+                    treeQueue.add(tempNode.left);
+                    treeQueue.add(tempNode.right);
+                }
+                levelNum--;
+            }
+            if (levelList.size() > 0) {
+                resultList.add(levelList);
+            }
+        }
+        return resultList;
     }
 
     public E getMin() {
