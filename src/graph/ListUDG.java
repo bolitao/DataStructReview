@@ -341,6 +341,7 @@ class ListUDG {
         };
         ListUDG pG;
         pG = new ListUDG(vexs, edges);
-        pG.prim(0);
+        pG.DFS();
+        pG.BFS();
     }
 }
