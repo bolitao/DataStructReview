@@ -84,8 +84,9 @@ class ListUDG {
     private void linkLast(ENode list, ENode node) {
         ENode p = list;
 
-        while (p.nextEdge != null)
+        while (p.nextEdge != null) {
             p = p.nextEdge;
+        }
         p.nextEdge = node;
     }
 
@@ -93,9 +94,11 @@ class ListUDG {
      * 返回ch位置
      */
     private int getPosition(char ch) {
-        for (int i = 0; i < mVexs.length; i++)
-            if (mVexs[i].data == ch)
+        for (int i = 0; i < mVexs.length; i++) {
+            if (mVexs[i].data == ch) {
                 return i;
+            }
+        }
         return -1;
     }
 
@@ -109,8 +112,9 @@ class ListUDG {
         System.out.printf("%c ", mVexs[i].data);
         node = mVexs[i].firstEdge;
         while (node != null) {
-            if (!visited[node.ivex])
+            if (!visited[node.ivex]) {
                 DFS(node.ivex, visited);
+            }
             node = node.nextEdge;
         }
     }
@@ -122,13 +126,15 @@ class ListUDG {
         boolean[] visited = new boolean[mVexs.length];       // 顶点访问标记
 
         // 初始化所有顶点都没有被访问
-        for (int i = 0; i < mVexs.length; i++)
+        for (int i = 0; i < mVexs.length; i++) {
             visited[i] = false;
+        }
 
         System.out.printf("DFS: ");
         for (int i = 0; i < mVexs.length; i++) {
-            if (!visited[i])
+            if (!visited[i]) {
                 DFS(i, visited);
+            }
         }
         System.out.printf("\n");
     }
@@ -141,8 +147,9 @@ class ListUDG {
         int rear = 0;
         int[] queue = new int[mVexs.length];            // 辅组队列
         boolean[] visited = new boolean[mVexs.length];  // 顶点访问标记
-        for (int i = 0; i < mVexs.length; i++)
+        for (int i = 0; i < mVexs.length; i++) {
             visited[i] = false;
+        }
         System.out.printf("BFS: ");
         for (int i = 0; i < mVexs.length; i++) {
             if (!visited[i]) {
@@ -171,12 +178,14 @@ class ListUDG {
      * 获取边<start, end>的权值；若start和end不是连通的，则返回无穷大。
      */
     private int getWeight(int start, int end) {
-        if (start == end)
+        if (start == end) {
             return 0;
+        }
         ENode node = mVexs[start].firstEdge;
         while (node != null) {
-            if (end == node.ivex)
+            if (end == node.ivex) {
                 return node.weight;
+            }
             node = node.nextEdge;
         }
         return INF;
@@ -192,8 +201,9 @@ class ListUDG {
         prims[index++] = mVexs[start].data;
         // 初始化"顶点的权值数组"，
         // 将每个顶点的权值初始化为"第start个顶点"到"该顶点"的权值。
-        for (i = 0; i < num; i++)
+        for (i = 0; i < num; i++) {
             weights[i] = getWeight(start, i);
+        }
         for (i = 0; i < num; i++) {
             // 由于从start开始的，因此不需要再对第start个顶点进行处理。
             if (start == i) {
@@ -221,8 +231,9 @@ class ListUDG {
                 // 获取第k个顶点到第j个顶点的权值
                 tmp = getWeight(k, j);
                 // 当第j个节点没有被处理，并且需要更新时才被更新。
-                if (weights[j] != 0 && tmp < weights[j])
+                if (weights[j] != 0 && tmp < weights[j]) {
                     weights[j] = tmp;
+                }
             }
         }
         // 计算最小生成树的权值
@@ -235,15 +246,17 @@ class ListUDG {
             for (j = 0; j < i; j++) {
                 m = getPosition(prims[j]);
                 tmp = getWeight(m, n);
-                if (tmp < min)
+                if (tmp < min) {
                     min = tmp;
+                }
             }
             sum += min;
         }
         // 打印最小生成树
         System.out.printf("PRIM(%c)=%d: ", mVexs[start].data, sum);
-        for (i = 0; i < index; i++)
+        for (i = 0; i < index; i++) {
             System.out.printf("%c ", prims[i]);
+        }
         System.out.printf("\n");
     }
 
@@ -309,8 +322,9 @@ class ListUDG {
      * 获取i的终点
      */
     private int getEnd(int[] vends, int i) {
-        while (vends[i] != 0)
+        while (vends[i] != 0) {
             i = vends[i];
+        }
         return i;
     }
 
@@ -343,5 +357,7 @@ class ListUDG {
         pG = new ListUDG(vexs, edges);
         pG.DFS();
         pG.BFS();
+        pG.prim(0);
+        pG.kruskal();
     }
 }
