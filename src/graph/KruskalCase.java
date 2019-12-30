@@ -110,6 +110,30 @@ public class KruskalCase {
         return i;
     }
 
+    public void kruskal() {
+        int index = 0;
+        int[] ends = new int[edgeNum];
+        EData[] results = new EData[edgeNum];
+        EData[] edges = getEdges();
+        System.out.println("图的边集合：" + Arrays.toString(edges) + "\n共 " + edges.length + " 条边。");
+        sortEdges(edges);
+        for (int i = 0; i < edgeNum; i++) {
+            int p1 = getPosition(edges[i].start);
+            int p2 = getPosition(edges[i].end);
+            int m = getEnd(ends, p1);
+            int n = getEnd(ends, p2);
+            // 如果 m - n 没有构成回路 TODO
+            if (m != n) {
+                ends[m] = n;
+                results[index++] = edges[i];
+            }
+        }
+        System.out.println("Kruskal: ");
+        for (int i = 0; i < index; i++) {
+            System.out.println(results[i]);
+        }
+    }
+
     public static void main(String[] args) {
         char[] vertexes = {'A', 'B', 'C', 'D', 'E', 'F', 'G'};
         int[][] matrix = {
@@ -123,9 +147,7 @@ public class KruskalCase {
         };
         KruskalCase kruskalCase = new KruskalCase(vertexes, matrix);
         kruskalCase.print();
-        EData[] edges = kruskalCase.getEdges();
-        System.out.println("\n" + Arrays.toString(edges));
-        kruskalCase.sortEdges(edges);
-        System.out.println("\n" + Arrays.toString(edges));
+        System.out.println();
+        kruskalCase.kruskal();
     }
 }
