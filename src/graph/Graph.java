@@ -37,30 +37,33 @@ public class Graph {
 //        isVisited = new boolean[vertexCount];
     }
 
-    public void insertVertex(String vertex) {
-        vertexList.add(vertex);
-    }
+//    public void insertVertex(String vertex) {
+//        vertexList.add(vertex);
+//    }
 
-    /**
-     * insert edge
-     *
-     * @param vertex1 vertex 1
-     * @param vertex2 vertex 2
-     * @param weight  weight of edge
-     */
-    public void insertEdge(int vertex1, int vertex2, int weight) {
-        edges[vertex1][vertex2] = weight;
-        edges[vertex2][vertex1] = weight;
-        numOfEdges++;
-    }
+//    /**
+//     * insert edge
+//     *
+//     * @param vertex1 vertex 1
+//     * @param vertex2 vertex 2
+//     * @param weight  weight of edge
+//     */
+//    public void insertEdge(int vertex1, int vertex2, int weight) {
+//        edges[vertex1][vertex2] = weight;
+//        edges[vertex2][vertex1] = weight;
+//        numOfEdges++;
+//    }
 
     public void createGraph(int vertexCount, String[] data, int[][] weight) {
         for (int i = 0; i < vertexCount; i++) {
             vertexList.add(data[i]);
-            System.arraycopy(weight[i], 0, this.edges[i], 0, vertexCount);
-//            for (int j = 0; j < vertexCount; j++) {
-//                this.edges[i][j] = weight[i][j];
-//            }
+//            System.arraycopy(weight[i], 0, this.edges[i], 0, vertexCount);
+            for (int j = 0; j < vertexCount; j++) {
+                this.edges[i][j] = weight[i][j];
+//                if (weight[i][j] != INF) {
+//                    numOfEdges++;
+//                }
+            }
         }
     }
 
@@ -73,6 +76,7 @@ public class Graph {
     }
 
     public int getNumOfEdges() {
+//        return numOfEdges / 2;
         return numOfEdges;
     }
 
@@ -185,7 +189,7 @@ public class Graph {
         // h1 与 h2 为两个顶点的下标
         int h1 = -1, h2 = -1;
         int minWeight = INF; // 初始化为 MAX
-        // 有 (getNumOfVertex() - 1) 条边
+        // 最小生成树由 (getNumOfVertex() - 1) 条边组成
         for (int k = 1; k < getNumOfVertex(); k++) {
             for (int i = 0; i < getNumOfVertex(); i++) {
                 for (int j = 0; j < getNumOfVertex(); j++) {
@@ -233,7 +237,7 @@ public class Graph {
 //    }
 
     /**
-     * test of prim and kruskal
+     * test of prim
      *
      * @param args main method args
      */
@@ -258,7 +262,9 @@ public class Graph {
         graph.bfs();
         System.out.println();
         System.out.println("\nPrim:");
-        int primSumWeight = graph.prim(0);
+        // 断点
+        int primSumWeight = graph.prim(1);
         System.out.println("SumWeight: " + primSumWeight);
+//        System.out.println(graph.getNumOfEdges());
     }
 }
