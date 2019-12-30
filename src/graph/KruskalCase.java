@@ -11,6 +11,31 @@ public class KruskalCase {
     private int[][] matrix;
     private static final int INF = Integer.MAX_VALUE;
 
+    /**
+     * Edge class
+     * used in kruskal
+     */
+    class EData {
+        char start;
+        char end;
+        int weight;
+
+        public EData(char start, char end, int weight) {
+            this.start = start;
+            this.end = end;
+            this.weight = weight;
+        }
+
+        @Override
+        public String toString() {
+            return "EData{" +
+                    "start=" + start +
+                    ", end=" + end +
+                    ", weight=" + weight +
+                    '}';
+        }
+    }
+
     public KruskalCase(char[] vertexes, int[][] matrix) {
         int vertexNum = vertexes.length;
         this.vertexes = new char[vertexNum];
@@ -115,7 +140,6 @@ public class KruskalCase {
         int[] ends = new int[edgeNum];
         EData[] results = new EData[edgeNum];
         EData[] edges = getEdges();
-        System.out.println("图的边集合：" + Arrays.toString(edges) + "\n共 " + edges.length + " 条边。");
         sortEdges(edges);
         for (int i = 0; i < edgeNum; i++) {
             int p1 = getPosition(edges[i].start);
@@ -129,9 +153,12 @@ public class KruskalCase {
             }
         }
         System.out.println("Kruskal: ");
+        int sumWeight = 0;
         for (int i = 0; i < index; i++) {
             System.out.println(results[i]);
+            sumWeight += results[i].weight;
         }
+        System.out.println("SumWeight: " + sumWeight);
     }
 
     public static void main(String[] args) {
@@ -146,8 +173,21 @@ public class KruskalCase {
                 {14, INF, INF, INF, 8, 9, 0}
         };
         KruskalCase kruskalCase = new KruskalCase(vertexes, matrix);
-        kruskalCase.print();
-        System.out.println();
         kruskalCase.kruskal();
     }
+
+//    public static void main(String[] args) {
+//        char[] vertexes = {'A', 'B', 'C', 'D', 'E', 'F', 'G'};
+//        int[][] matrix = {
+//                {INF, 1, 1, INF, INF, INF, INF},
+//                {1, INF, INF, 1, 1, INF, INF},
+//                {1, INF, INF, INF, INF, 1, 1},
+//                {INF, 1, INF, INF, 1, INF, INF},
+//                {INF, 1, INF, 1, INF, INF, INF},
+//                {INF, INF, 1, INF, INF, INF, 1},
+//                {INF, INF, 1, INF, INF, 1, INF}
+//        };
+//        KruskalCase kruskalCase = new KruskalCase(vertexes, matrix);
+//        kruskalCase.kruskal();
+//    }
 }
